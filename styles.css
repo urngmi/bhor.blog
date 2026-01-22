@@ -1,83 +1,73 @@
-/* NUKE MODE: Minimalist, black background, Helvetica/Apple System UI bold for title, Sohne Mono for links */
+/* Styles intentionally left blank. Will be replaced for Markdown system. */
 
-/* Font Face Declarations - Using Sohne fonts from local directory */
-@font-face {
-    font-family: sohne-mono;
-    src: url(./sohne-font-family-1768748556-0/TestSohneMono-Buch-BF663d89cbcec64.otf) format("opentype");
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
+body {
+  background: #1e1e1e;
+  color: #fff;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin: 0;
+  min-height: 100vh;
 }
 
-body.nuke-bg {
-    background: #000;
-    color: #fff;
-    min-height: 100vh;
-    margin: 0;
-    font-family: 'Helvetica Neue', Helvetica, 'Apple System', 'Segoe UI', Arial, sans-serif;
-    font-size: 18px;
-    font-weight: 400;
+#md-root {
+  max-width: 600px;
+  margin: 4rem 0 0 3vw;
+  padding: 2rem 2rem 2rem 0;
+  text-align: left;
 }
 
-.nuke-main {
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 48px 16px 0 16px;
+h1 {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 2.5rem;
+  font-weight: 900;
+  letter-spacing: normal;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-align: left;
 }
 
-.nuke-title {
-    font-family: 'Helvetica Neue', Helvetica, 'Apple System', 'Segoe UI', Arial, sans-serif;
-    font-size: 3.5rem;
-    font-weight: 700;
-    margin: 0 0 32px 0;
-    letter-spacing: -0.04em;
-    line-height: 1.05;
+h2 {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: normal;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-align: left;
 }
 
-.nuke-nav {
-    margin-bottom: 48px;
-    display: flex;
-    gap: 32px;
+h3 {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: normal;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  text-align: left;
 }
 
-.nuke-link {
-    font-family: sohne-mono, 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', monospace;
-    font-size: 1rem;
-    font-weight: 400;
-    color: #c4e817;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    transition: color 0.2s;
-}
-.nuke-link:hover {
-    color: #fff;
+h4, h5, h6 {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: normal;
+  margin-top: 1.2rem;
+  margin-bottom: 0.5rem;
+  text-align: left;
 }
 
-.nuke-blog {
-    display: flex;
-    flex-direction: column;
-    gap: 48px;
+a {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #A68AF9;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: normal;
+  transition: color 0.2s;
 }
 
-.nuke-post-title {
-    font-family: 'Helvetica Neue', Helvetica, 'Apple System', 'Segoe UI', Arial, sans-serif;
-    font-size: 2rem;
-    font-weight: 700;
-    margin: 0 0 8px 0;
-    letter-spacing: -0.02em;
+a:hover {
+  color: #fff;
 }
 
-.nuke-post-meta {
-    font-family: sohne-mono, 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', monospace;
-    font-size: 0.95rem;
-    color: #c4e817;
-    margin-bottom: 12px;
-}
-
-.nuke-post p {
-    margin: 0;
-    color: #fff;
-    font-size: 1.1rem;
-    line-height: 1.6;
+ul, ol {
+  margin-left: 2rem;
 }
